@@ -1,0 +1,4 @@
+<resources>
+    <item name="window_maximized" type="id" />
+    <item name="window_saved_bounds" type="id" />
+</resources>
