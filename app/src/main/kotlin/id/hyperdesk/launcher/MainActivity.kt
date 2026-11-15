@@ -122,7 +122,7 @@ class MainActivity : Activity() {
                 setPadding(dp(4), dp(5), dp(4), dp(5))
                 background = rounded(Color.TRANSPARENT, 10)
                 setOnClickListener { opener() }
-                setOnLongClickListener { showShortcutMenu(name, opener); true }
+                setOnLongClickListener { showShortcutMenu(name) { opener() }; true }
             }
             tile.addView(label(icon, 25, Color.WHITE, false).apply { gravity = Gravity.CENTER })
             tile.addView(label(name, 10, Color.WHITE, false).apply { gravity = Gravity.CENTER; maxLines = 2 })
